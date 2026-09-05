@@ -7,7 +7,6 @@ class Solution {
             if(price < minPrice ) {
                 minPrice = price;
             }
-
             if(price - minPrice > maxProfit) {
                 maxProfit = price - minPrice;
             }
