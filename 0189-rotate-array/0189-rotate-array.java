@@ -12,13 +12,13 @@ class Solution {
         }
      }
     public void rotate(int[] nums, int k) {
-        int n= nums.length;
+        int n = nums.length;
         if(k % n == 0){
             return ;
         }
         k= k % n;
-       Rev(nums, 0, nums.length-1);
+       Rev(nums, 0, n-1);
        Rev(nums, 0, k-1);
-       Rev(nums, k, nums.length-1);
+       Rev(nums, k, n-1);
     }
 }
