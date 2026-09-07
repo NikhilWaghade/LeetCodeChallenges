@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0189-rotate-array](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0189-rotate-array) |
+| [0217-contains-duplicate](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0217-contains-duplicate) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -18,4 +19,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0189-rotate-array) |
+## Hash Table
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0217-contains-duplicate) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/NikhilWaghade/LeetCodeChallenges/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
