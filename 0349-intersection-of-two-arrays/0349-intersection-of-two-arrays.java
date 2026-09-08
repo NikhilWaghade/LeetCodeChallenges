@@ -2,7 +2,9 @@ class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
       Set<Integer> s1 = new HashSet<>();
       Set<Integer> s2 = new HashSet<>();
-
+      
+//  Time: O(n + m)
+//  Space: O(n + m)
       for(int num:nums1){
         s1.add(num);
       }
@@ -11,7 +13,7 @@ class Solution {
         s2.add(num);
       }
 
-    //   intersection
+    //   intersection apply
     int [] result = new int[s1.size()];
     int k=0;
       for(int num: s1){
