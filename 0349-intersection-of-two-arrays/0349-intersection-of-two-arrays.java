@@ -22,6 +22,7 @@ class Solution {
           k=k+1;
         }        
        }
+       //Array ka sirf required part copy karenga.
     return Arrays.copyOfRange(result, 0, k);
     }
 }
