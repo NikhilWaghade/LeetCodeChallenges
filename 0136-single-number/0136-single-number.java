@@ -10,7 +10,7 @@ class Solution {
         //     }
         //     map.put(num,map.get(num)+1);
         // }
-        // <2:0++ 1:++1: 2:2,  1:0:++1; 1:1>
+        // <2:0++1, 2:1:++1, 2:2,  1:0:++1; 1:1>
         // for(int num:nums){
         //     if(map.get(num) ==1){
         //         return num;
