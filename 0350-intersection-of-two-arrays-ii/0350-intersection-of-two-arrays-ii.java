@@ -2,6 +2,10 @@ class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new HashMap<>();
 
+// Optimal Solution
+// ✅ Time: O(n + m)
+// ✅ Space: O(n)
+
         for(int num:nums1){
             map.put(num, map.getOrDefault(num, 0) +1 );
         }
