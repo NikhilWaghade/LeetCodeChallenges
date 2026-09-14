@@ -3,6 +3,7 @@ class Solution {
         int [][] rows = new int [9][9];
         int [][] cols = new int [9][9];
         int [][] boxes= new int [9][9];
+        // T: 0(n^2) , S: 0(n^2)
 
         for(int r=0; r<9; r++){
             for(int c=0; c<9; c++){
