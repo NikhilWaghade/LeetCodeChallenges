@@ -26,6 +26,7 @@ class Solution {
         // for(int i=0;i<n/2;i++){
         //     for(int j=i; j<n-i-1; j++){
         //         // cycle 
+         // T: 0(n^2) , S: 0(1)
         //         int delta = j-i;
 
         //         int curr = matrix[i][j];
