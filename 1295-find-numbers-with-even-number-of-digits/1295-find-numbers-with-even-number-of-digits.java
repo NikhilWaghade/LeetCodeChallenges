@@ -21,18 +21,41 @@ class Solution {
     //     return evenCount;
 
     // second approach 
+    // public int findNumbers(int[] nums) {
+
+    //     int evenCount = 0;
+
+    //     for (int num : nums) {
+    //         int len = String.valueOf(num).length();
+
+    //         if (len % 2 == 0) {
+    //             evenCount++;
+    //         }
+    //     }
+
+    //     return evenCount;
+
+    // third approach 
+    // public int findNumbers(int[] nums) {
+    //     int evenCount =0;
+
+    //     for(int num: nums){
+    //         int digitCount = (int) Math.floor(Math.log10(num) + 1);
+
+    //         if(digitCount % 2 == 0){
+    //             evenCount++;
+    //         }
+    //     }
+    //     return evenCount;
+
+    // forth & leetcode according
     public int findNumbers(int[] nums) {
-
         int evenCount = 0;
-
         for (int num : nums) {
-            int len = String.valueOf(num).length();
-
-            if (len % 2 == 0) {
+            if (num >= 10 && num <= 99 || num >= 1000 && num <= 9999 || num == 100000) {
                 evenCount++;
             }
         }
-
         return evenCount;
     }
 }
