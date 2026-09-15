@@ -20,7 +20,7 @@ class Solution {
     //     }
     //     return evenCount;
 
-    // second approach 
+    // second approach (convert to string) 
     // public int findNumbers(int[] nums) {
 
     //     int evenCount = 0;
@@ -35,7 +35,7 @@ class Solution {
 
     //     return evenCount;
 
-    // third approach 
+    // third approach (log method)
     // public int findNumbers(int[] nums) {
     //     int evenCount =0;
 
