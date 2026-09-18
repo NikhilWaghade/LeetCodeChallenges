@@ -1,27 +1,23 @@
 class Solution {
-    // public boolean containsDuplicate(int[] nums) {
-    //     // timeCom.= o(nlogn)
-    //     // spaceCom= o(logn)
-    //    Arrays.sort(nums);
-      
-    //   for(int i=0;i<nums.length-1;i++){
-    //     if(nums[i]==nums[i+1]){
-    //         return true;
-    //     }
-    //   }
-    //   return false;
+    public boolean containsDuplicate(int[] nums) {
+        // for(int i=0; i<nums.length;i++){
+        //     if(nums[i] != nums[i+1]){
+        //         return false;
+        //     }
+        //     else{
+        //         return true;
+        //     }
+        // }
+        // return false;
 
-    // optimal approach 
-    public boolean containsDuplicate(int[] nums){
-    Set<Integer> set = new HashSet<>();
-    // T:o(n)
-    // S:o(1)
-    for(int num : nums){
-        if(set.contains(num)){
-            return true;
+    //   sorting method 
+       Arrays.sort(nums);
+        for(int i=0;i<nums.length-1;i++){
+            // T:O(n log n), S:O(log n)
+            if(nums[i] == nums[i+1]){
+                return true;
+            }
         }
-        set.add(num);
-    }
-      return false;
+        return false;
     }
 }
