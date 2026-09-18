@@ -30,7 +30,7 @@ class Solution {
         // second approach Bruth foarch 2
 
         int n = arr.length;
-        // T:0(n^2), S:0()
+        // T:0(n^2), S:0(1)
         for (int i = 0; i < n; i++) {
             if (arr[i] == 0) {
                 for (int j = n - 1; j > i; j--) {
