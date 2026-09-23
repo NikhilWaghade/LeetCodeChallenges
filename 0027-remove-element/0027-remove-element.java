@@ -12,6 +12,7 @@ class Solution {
         // return i;
 
         // approch 2 Order Not Maintained but Good
+        // T:o(n), o(1)
         int n = nums.length;
         int i =0;
         while(i<n){
