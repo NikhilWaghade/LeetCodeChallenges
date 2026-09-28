@@ -1,30 +1,48 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-
-        //     int k=0;
-        // T:0(n) , S:0(1)
-        //     for(int i=0;i<nums.length;i++){
-        //         if(nums[i] != 0){
-        //             nums[k]=nums[i];
-        //             k++;
-        //           }
+        // brute force 
+        // T:O(n), S:O(1)
+        // int [] result = new int [nums.length];
+        // int j=0;
+        // for(int i=0; i<nums.length; i++){
+        //     if(nums[i] !=0 ){
+        //         result[j] = nums[i];
+        //         j++;
         //     }
-        //    while(k < nums.length){
-        //     nums[k] = 0;
-        //     k++;
-        //    }
+        // }
+        // for(int i=0; i<nums.length; i++){
+        //     nums[i] = result[i];
+        // }
 
-        // second approach 
-        // Complexity
-        //   T:O(n),S:O(1)
-        int k = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                int temp = nums[i];
-                nums[i] = 0;
-                nums[k] = temp;
-                k++;
-            }
+        // two pointer 
+        // T:O(n), S: O(1)
+        // int slow =0, fast = 0;
+        
+        // while(fast < nums.length){
+        //     if(nums[fast] != 0){
+        //     nums[slow] = nums[fast];
+        //     slow++;
+        //     }
+        //     fast++;
+        // }
+         
+        // while(slow < nums.length){
+        //     nums[slow] = 0;
+        //     slow++;
+        // }
+
+        // or swap 
+        // T:O(n), S:O(1)
+        int slow =0, fast = 0;
+        
+        while(fast < nums.length){
+            if(nums[fast] != 0){
+            int temp = nums[fast];
+            nums[fast] = nums[slow];
+            nums[slow] = temp;
+            slow++;
+        }
+        fast++;
         }
     }
 }
