@@ -19,7 +19,7 @@ class Solution {
         // }
         // return result;
 
-        // optimal Using Two Pointer 
+        // optimal Using Two Pointer + Swap
         // T:O(n), S:O(1)
         int left =0 ;
         for(int right=0; right < nums.length; right++){
