@@ -22,9 +22,9 @@ class Solution {
             if(nums[idx] < 0){
                 continue;
             }
-
             nums[idx]  = -1 * nums[idx];
         }
+
         List <Integer> res = new LinkedList<>();
 
         for(int i=0; i<nums.length; i++){
