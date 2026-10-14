@@ -1,5 +1,6 @@
 class Solution {
      public void Rev(int[] nums, int start, int end ){
+        // T:O(n), S:O(1)
         while(start <= end){
         int temp = nums[start];
         nums[start]=nums[end];
